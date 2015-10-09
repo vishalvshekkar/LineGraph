@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="byV-go-5aW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Line_Chart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-vU-cid">
+                                <rect key="frame" x="113" y="64" width="375" height="255"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqA-eG-ixx" customClass="LineChart" customModule="Line_Chart" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="43" width="345" height="212"/>
+                                        <animations/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.16536458333333337" green="0.16536458333333337" blue="0.16536458333333337" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nqA-eG-ixx" secondAttribute="trailing" constant="15" id="3Gv-cB-0NW"/>
+                                    <constraint firstAttribute="height" constant="255" id="EgU-VJ-XLG"/>
+                                    <constraint firstItem="nqA-eG-ixx" firstAttribute="top" secondItem="sMJ-vU-cid" secondAttribute="top" constant="43" id="F1Q-UB-XmA"/>
+                                    <constraint firstAttribute="bottom" secondItem="nqA-eG-ixx" secondAttribute="bottom" id="MV0-OB-cS5"/>
+                                    <constraint firstItem="nqA-eG-ixx" firstAttribute="leading" secondItem="sMJ-vU-cid" secondAttribute="leading" constant="15" id="PNv-Mq-z82"/>
+                                    <constraint firstAttribute="width" constant="375" id="d0G-VX-R6J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sMJ-vU-cid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3SS-hK-yNq"/>
+                            <constraint firstItem="sMJ-vU-cid" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="cNh-bx-W9F"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="446"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="u88-ZE-vp0">
+            <objects>
+                <viewController id="byV-go-5aW" customClass="CodeViewController" customModule="Line_Chart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nk3-4z-3a6"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQQ-sn-pb9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZST-wv-nWz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQ8-7C-ael" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="446"/>
+        </scene>
+    </scenes>
+</document>
