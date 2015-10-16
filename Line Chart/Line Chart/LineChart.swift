@@ -16,8 +16,8 @@ import UIKit
             self.backgroundColor = graphBackgroundColor
         }
     }
-    @IBInspectable var startColor: UIColor = UIColor(red:0.27, green:0.7, blue:0.65, alpha:1.0)
-    @IBInspectable var endColor: UIColor = UIColor(red:0.22, green:0.22, blue:0.22, alpha:0.3)
+    @IBInspectable var startColor: UIColor = UIColor(red:25/255, green:214/255, blue:189/255, alpha:1.0)
+    @IBInspectable var endColor: UIColor = UIColor(red:0.33, green:0.33, blue:0.33, alpha:0.3)
     @IBInspectable var graphLineColor: UIColor = UIColor.whiteColor()
     @IBInspectable var gridColor: UIColor = UIColor(red:0.24, green:0.24, blue:0.24, alpha:1)
     @IBInspectable var gridFontColor: UIColor = UIColor(red:0.36, green:0.36, blue:0.36, alpha:1)
@@ -111,7 +111,7 @@ import UIKit
         
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
-        let colorLocations:[CGFloat] = [0.2, 1.0]
+        let colorLocations:[CGFloat] = [0.05, 0.8]
         
         let gradient = CGGradientCreateWithColors(colorSpace, colors, colorLocations)
         
